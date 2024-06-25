@@ -1,0 +1,472 @@
+@charset "UTF-8";
+@media screen and (max-width: 1049px) {
+  .wrapper {
+    margin: 0;
+    padding: 0;
+    .comment {
+      display: none;
+    }
+    .main-nav {
+      .logo > img {
+        width: 6.25rem;
+        position: absolute;
+        top: 20%;
+        left: 45%;
+        right: 40%;
+        z-index: 99;
+      }
+      /* メニューリストクリック前 */
+      .nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: rgba(147, 133, 55, 1);
+        padding: 5rem 0.625rem 0 0.625rem;
+        width: 100%;
+        height: 100vh;
+        z-index: 999;
+        transition: all 0.5s;
+        /* メニューリストクリック後 */
+        &.show {
+          right: 0;
+          z-index: 999;
+          width: 100%;
+          height: 100vh;
+          padding: 5rem 0.625rem 0 0.625rem;
+        }
+      }
+      .nav-menu_ul,
+      li {
+        margin: 0;
+        list-style-type: none;
+        font-weight: 400;
+        line-height: 2.5rem;
+        border-bottom: solid 1px #fff;
+        a {
+          display: block;
+          color: #fff;
+          padding-right: auto;
+          text-decoration: none;
+          position: relative;
+          &::before {
+            content: "";
+            width: 7px;
+            height: 7px;
+            border-top: solid 2px #fff;
+            border-right: solid 2px #fff;
+            transform: rotate(45deg);
+            position: absolute;
+            right: 11px;
+            top: 16px;
+          }
+        }
+      }
+      /* ボタンクリック前 */
+      .nav-wrap {
+        position: absolute;
+        top: 2rem;
+        right: 5rem;
+        .nav_toggle {
+          margin: 0;
+          width: 4.3rem;
+          height: 3.9rem;
+          position: fixed;
+          z-index: 1000;
+          background-color: rgba(147, 133, 55, 1);
+          border: solid 20px rgba(147, 133, 55, 1);
+          i {
+            width: 100%;
+            height: 3px;
+            background-color: #ffffff;
+            border-radius: 3px;
+            position: absolute;
+          }
+
+          i:nth-child(1) {
+            top: 0;
+          }
+
+          i:nth-child(2) {
+            top: 50%;
+            transform: translateY(-50%);
+          }
+
+          i:nth-child(3) {
+            bottom: 0;
+          }
+
+          &.show {
+            i:nth-child(1) {
+              transform: translateY(10px) rotate(-45deg);
+            }
+
+            i:nth-child(2) {
+              opacity: 0;
+            }
+
+            i:nth-child(3) {
+              transform: translateY(-10px) rotate(45deg);
+            }
+          }
+        }
+      }
+    }
+    .swiper {
+      width: 100%;
+      .swiper-wrapper {
+        width: 100%;
+        height: 85vh;
+        .swiper-slide > img {
+          width: 100%;
+          height: 85%;
+          object-fit: cover;
+          object-position: center center;
+          position: relative;
+        }
+      }
+    }
+  }
+  .three-picture {
+    margin-top: 9.275rem;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    .center {
+      position: absolute;
+      top: 24.5rem;
+      background-color: rgba(147, 133, 55, 1);
+      color: #fff;
+      width: 100%;
+      padding-bottom: 5rem;
+      z-index: 10;
+      background: linear-gradient(
+        to bottom,
+        rgba(147, 133, 55, 1) 80%,
+        rgba(147, 133, 55, 0) 100%
+      );
+      .title {
+        padding-top: 40px;
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 100;
+        letter-spacing: 3px;
+      }
+      .message {
+        padding: 1.875rem;
+        line-height: 1.5em;
+        letter-spacing: 0.13rem;
+        font-weight: 100;
+        color: #fff;
+        font-size: 1em;
+      }
+    }
+    .three-images > img {
+      width: 100%;
+      height: 50rem;
+    }
+    .shops {
+      display: none;
+    }
+    .staffs {
+      background-color: rgba(147, 133, 55, 1);
+      position: relative;
+    }
+  }
+  .sub-menu_ul {
+    display: none;
+  }
+  #sub-nav.m_fixed {
+    display: none;
+  }
+
+  .meal {
+    margin: 3.125em 3.125em 0 3.125em;
+    display: flex;
+    flex-direction: column;
+    &::before {
+      content: "お食事";
+      text-align: center;
+      font-weight: 100;
+      font-size: 1.25rem;
+      color: rgb(63, 63, 63);
+      letter-spacing: 3px;
+      padding-bottom: 0.625rem;
+    }
+    .dinner > img {
+      width: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+    .meal-about {
+      display: flex;
+      flex-direction: column-reverse;
+      .meal-description {
+        display: none;
+      }
+      .meal-wrap {
+        &::before {
+          content: "まるで実家の晩御飯のよう。\Aどこか懐かしいお母さんの味。第2の実家がここ東京の赤坂にあります。";
+          white-space: pre;
+          text-wrap: wrap;
+          letter-spacing: 2px;
+          font-size: 15px;
+          color: rgb(63, 63, 63);
+        }
+        .meal-title {
+          display: none;
+        }
+        .meal-ditail {
+          margin: 0.625rem 0;
+          .ditail-button {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 0.625rem;
+            padding-left: 0.625rem;
+            text-decoration: none;
+            width: 9.8125rem;
+            letter-spacing: 10px;
+            border-radius: 30px;
+            border: solid 3px #94392f;
+            color: #94392f;
+            transition: background-color 0.5s;
+            &:hover {
+              display: flex;
+              flex-direction: column;
+              writing-mode: vertical-lr;
+              font-size: x-large;
+              background-color: #94392f;
+              color: #fff;
+              img {
+                padding-left: 0.625rem;
+                object-position: center right;
+              }
+            }
+            & > img {
+              object-position: center right;
+              transform: rotate(-90deg);
+            }
+          }
+        }
+      }
+    }
+  }
+  .drink-wrap {
+    &::after {
+      content: "お飲みもの";
+      text-align: center;
+      font-weight: 100;
+      font-size: 1.25rem;
+      color: rgb(63, 63, 63);
+      letter-spacing: 3px;
+      margin: 1.875rem 0 0.625rem 0;
+    }
+    margin: 0 3.125em 3.125em 3.125em;
+    display: flex;
+    flex-direction: column-reverse;
+    .drink-image {
+      & > img {
+        width: 100%;
+      }
+      &::after {
+        content: "各地のこだわりのお酒で、美味しく楽しい時間を。";
+        line-height: 1.7rem;
+        font-size: 0.9rem;
+        color: rgb(63, 63, 63);
+      }
+    }
+    .drink-description {
+      display: none;
+    }
+    .drink {
+      .drink-title {
+        display: none;
+      }
+      .drink-ditail {
+        margin-top: 0.625rem;
+        .drink-button {
+          padding-left: 0.625rem;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 0.625rem;
+          width: 9.8125rem;
+          text-decoration: none;
+          letter-spacing: 10px;
+          border-radius: 30px;
+          border: solid 3px #94392f;
+          color: #94392f;
+          transition: background-color 0.5s;
+          &:hover {
+            display: flex;
+            flex-direction: column;
+            font-size: x-large;
+            writing-mode: vertical-lr;
+            background-color: #94392f;
+            color: #fff;
+            img {
+              padding-left: 0.625rem;
+              object-position: center right;
+            }
+          }
+          & > img {
+            object-position: center right;
+            transform: rotate(-90deg);
+          }
+        }
+      }
+    }
+  }
+
+  .bottom-erea {
+    background-image: url(../images/backgroundimage2.jpg);
+    background-size: contain;
+    background-repeat: repeat;
+    .inside-shop {
+      padding: 2rem 0 1rem 0;
+      text-align: center;
+      font-size: larger;
+      letter-spacing: 2px;
+      font-weight: 100;
+      color: rgb(100, 100, 100);
+    }
+    .seat {
+      color: rgb(100, 100, 100);
+      letter-spacing: 2px;
+      line-height: 25px;
+      .seat-counter {
+        margin: 20px;
+        background-color: #fff;
+        box-shadow: 0 1px 10px 1px rgb(206, 206, 206);
+        & > img {
+          width: 100%;
+        }
+        .counter-number {
+          padding: 2rem;
+          font-size: x-large;
+        }
+        .counter-comment {
+          font-size: 1rem;
+          padding: 0 20px 60px 20px;
+        }
+      }
+      .seat-table {
+        margin: 20px;
+        background-color: #fff;
+        box-shadow: 0 1px 10px 1px rgb(206, 206, 206);
+        & > img {
+          width: 100%;
+        }
+        .table-number {
+          padding: 2rem;
+          font-size: x-large;
+        }
+        .table-comment {
+          font-size: 1rem;
+          padding: 0 20px 60px 20px;
+        }
+      }
+      .little-private {
+        margin: 20px;
+        background-color: #fff;
+        box-shadow: 0 1px 10px 1px rgb(206, 206, 206);
+        & > img {
+          width: 100%;
+        }
+        .little-number {
+          padding: 2rem;
+          font-size: x-large;
+        }
+        .little-comment {
+          font-size: 1rem;
+          padding: 0 20px 60px 20px;
+        }
+      }
+      .seat-private {
+        margin: 20px;
+        background-color: #fff;
+        box-shadow: 0 1px 10px 1px rgb(206, 206, 206);
+        & > img {
+          width: 100%;
+        }
+        .private-number {
+          padding: 2rem;
+          font-size: x-large;
+        }
+        .private-comment {
+          font-size: 1rem;
+          padding: 0 20px 60px 20px;
+        }
+      }
+      .fadeIn_up {
+        opacity: 0;
+        transform: translate(0, 50%);
+        transition: 2s;
+      }
+      .fadeIn_up.on {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
+    }
+  }
+  .sns-title {
+    padding: 2em 0;
+    letter-spacing: 3px;
+    font-size: 2.5rem;
+    color: rgb(63, 63, 63);
+    font-weight: 100;
+    text-align: center;
+  }
+  .sns-area {
+    margin: 0 0 3rem 0;
+    .sns-logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      .sns-instagram > img {
+        width: 12.484375rem;
+        padding: 0;
+      }
+      .sns-facebook {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        gap: 1.5rem;
+        & > img {
+          display: inline-block;
+          max-width: 200px;
+        }
+        .fb-plugin {
+          text-align: center;
+        }
+      }
+      .fadeIn_up {
+        opacity: 0;
+        transform: translate(0, 50%);
+        transition: 2s;
+      }
+      .fadeIn_up.on {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
+    }
+  }
+  .reservation {
+    display: block;
+    text-align: center;
+    position: fixed;
+    top: 400px;
+    right: 10px;
+    padding: 15px 10px;
+    background-color: #94392f;
+    border: solid 3px #94392f;
+    border-radius: 60px;
+    z-index: 150;
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+}
