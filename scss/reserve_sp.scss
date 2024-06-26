@@ -119,23 +119,26 @@
       color: rgb(63, 63, 63);
     }
     &-comment {
-      margin: 3rem 1rem 1rem 20vw;
+      margin: 3rem 1rem 1rem 7%;
       font-size: 1.09375rem;
       font-weight: 100;
       letter-spacing: 2px;
       color: rgb(63, 63, 63);
     }
     &-tools {
-      margin-left: 0;
+      margin-left: 7%;
       border-collapse: separate;
-      border-spacing: 20vw 3.125rem;
+      border-spacing: 0 3.125em;
       .tel {
         th {
+          width: 26%;
           text-align: left;
-          vertical-align: top;
+          vertical-align: baseline;
         }
         td {
           a {
+            text-wrap: nowrap;
+            margin-left: 85%;
             letter-spacing: 2px;
             color: rgb(44, 44, 44);
             font-weight: 500;
@@ -145,10 +148,12 @@
       }
       .line {
         th {
+          width: 26%;
           text-align: left;
-          vertical-align: top;
+          vertical-align: baseline;
         }
         td a {
+          margin-left: 85%;
           padding: 1.03125rem 2.1875rem;
           letter-spacing: 2px;
           font-weight: 500;

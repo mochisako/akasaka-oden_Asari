@@ -194,7 +194,7 @@
     width: 28.125rem;
   }
   .menu-cold .cold-introduction {
-    width: 30rem;
+    width: 25rem;
     color: rgb(109, 109, 109);
   }
   .menu-cold .cold-introduction .cold-title {
@@ -224,7 +224,7 @@
     opacity: 1;
   }
   .menu-fried {
-    margin: 8rem;
+    margin: 8rem 0;
     display: flex;
     justify-content: center;
   }
@@ -233,7 +233,7 @@
     height: 21.875rem;
   }
   .menu-fried .fried-introduction {
-    width: 30rem;
+    width: 20rem;
     color: rgb(109, 109, 109);
   }
   .menu-fried .fried-introduction .fried-title {
@@ -270,7 +270,7 @@
     width: 28.125rem;
   }
   .menu-grilled .grilled-introduction {
-    width: 30rem;
+    width: 23rem;
     color: rgb(109, 109, 109);
   }
   .menu-grilled .grilled-introduction .grilled-title {
@@ -309,7 +309,7 @@
     height: 21.875rem;
   }
   .menu-closing .closing-introduction {
-    width: 30rem;
+    width: 23rem;
     color: rgb(109, 109, 109);
   }
   .menu-closing .closing-introduction .closing-title {

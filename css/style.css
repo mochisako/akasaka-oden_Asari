@@ -1,6 +1,7 @@
 @media screen and (min-width: 1050px) {
   .wrapper {
     margin: 8.5rem 3.125rem 0 3.125rem;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -233,21 +234,19 @@
     color: rgb(63, 63, 63);
   }
   .bottom-erea .seat {
-    display: grid;
-    justify-items: center;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1.25rem;
-    margin: 0 auto;
+    margin: 0 2em;
+    padding-bottom: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     max-width: 1198px;
     color: rgb(100, 100, 100);
     letter-spacing: 2px;
     line-height: 25px;
   }
   .bottom-erea .seat-counter {
+    margin: 1em;
     background-color: #fff;
-    grid-column: 1/2;
-    grid-row: 1/2;
     box-shadow: 0 1px 10px 1px rgb(206, 206, 206);
     width: 31.1rem;
   }
@@ -263,9 +262,8 @@
     padding: 0 20px 40px 20px;
   }
   .bottom-erea .seat-table {
+    margin: 1em;
     background-color: #fff;
-    grid-column: 2/3;
-    grid-row: 1/2;
     box-shadow: 0 1px 10px 1px rgb(206, 206, 206);
     width: 31.1rem;
   }
@@ -281,9 +279,8 @@
     padding: 0 20px 40px 20px;
   }
   .bottom-erea .seat .little-private {
+    margin: 1em;
     background-color: #fff;
-    grid-column: 1/2;
-    grid-row: 2/3;
     box-shadow: 0 1px 10px 1px rgb(206, 206, 206);
     width: 31.1rem;
     margin-bottom: 10px;
@@ -300,9 +297,8 @@
     padding: 0 20px 40px 20px;
   }
   .bottom-erea .seat-private {
+    margin: 1em;
     background-color: #fff;
-    grid-column: 2/3;
-    grid-row: 2/3;
     box-shadow: 0 1px 10px 1px rgb(206, 206, 206);
     width: 31.1rem;
     margin-bottom: 10px;

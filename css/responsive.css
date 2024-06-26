@@ -111,30 +111,25 @@
   }
   .wrapper .swiper .swiper-wrapper {
     width: 100%;
-    height: 85vh;
+    height: 80vh;
   }
   .wrapper .swiper .swiper-wrapper .swiper-slide > img {
     width: 100%;
-    height: 85%;
+    height: 100%;
     object-fit: cover;
     object-position: center center;
     position: relative;
   }
   .three-picture {
-    margin-top: 9.275rem;
-    display: flex;
-    flex-direction: column-reverse;
+    display: block;
     width: 100%;
   }
   .three-picture .center {
-    position: absolute;
-    top: 24.5rem;
     background-color: rgb(147, 133, 55);
     color: #fff;
     width: 100%;
-    padding-bottom: 5rem;
+    padding-bottom: 1rem;
     z-index: 10;
-    background: linear-gradient(to bottom, rgb(147, 133, 55) 80%, rgba(147, 133, 55, 0) 100%);
   }
   .three-picture .center .title {
     padding-top: 40px;
@@ -151,16 +146,27 @@
     color: #fff;
     font-size: 1em;
   }
-  .three-picture .three-images > img {
-    width: 100%;
-    height: 50rem;
-  }
   .three-picture .shops {
     display: none;
   }
   .three-picture .staffs {
     background-color: rgb(147, 133, 55);
+    display: inline-block;
     position: relative;
+  }
+  .three-picture .staffs::after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(147, 133, 55, 0), rgba(147, 133, 55, 0) 80%, rgb(147, 133, 55) 100%, rgb(147, 133, 55) 100%);
+  }
+  .three-picture .staffs > img {
+    width: 100%;
+    height: 100%;
   }
   .sub-menu_ul {
     display: none;
@@ -327,11 +333,11 @@
     width: 100%;
   }
   .bottom-erea .seat .seat-counter .counter-number {
-    padding: 2rem;
-    font-size: x-large;
+    padding: 1.5em;
+    font-size: 1.125rem;
   }
   .bottom-erea .seat .seat-counter .counter-comment {
-    font-size: 1rem;
+    font-size: 0.875rem;
     padding: 0 20px 60px 20px;
   }
   .bottom-erea .seat .seat-table {
@@ -343,11 +349,11 @@
     width: 100%;
   }
   .bottom-erea .seat .seat-table .table-number {
-    padding: 2rem;
-    font-size: x-large;
+    padding: 1.5em;
+    font-size: 1.125rem;
   }
   .bottom-erea .seat .seat-table .table-comment {
-    font-size: 1rem;
+    font-size: 0.875rem;
     padding: 0 20px 60px 20px;
   }
   .bottom-erea .seat .little-private {
@@ -359,11 +365,11 @@
     width: 100%;
   }
   .bottom-erea .seat .little-private .little-number {
-    padding: 2rem;
-    font-size: x-large;
+    padding: 1.5em;
+    font-size: 1.125rem;
   }
   .bottom-erea .seat .little-private .little-comment {
-    font-size: 1rem;
+    font-size: 0.875rem;
     padding: 0 20px 60px 20px;
   }
   .bottom-erea .seat .seat-private {
@@ -375,11 +381,11 @@
     width: 100%;
   }
   .bottom-erea .seat .seat-private .private-number {
-    padding: 2rem;
-    font-size: x-large;
+    padding: 1.5em;
+    font-size: 1.125rem;
   }
   .bottom-erea .seat .seat-private .private-comment {
-    font-size: 1rem;
+    font-size: 0.875rem;
     padding: 0 20px 60px 20px;
   }
   .bottom-erea .seat .fadeIn_up {
@@ -439,12 +445,12 @@
     display: block;
     text-align: center;
     position: fixed;
-    top: 400px;
-    right: 10px;
-    padding: 15px 10px;
+    bottom: 16px;
+    right: 16px;
+    padding: 20px 15px;
     background-color: #94392f;
     border: solid 3px #94392f;
-    border-radius: 60px;
+    border-radius: 70px;
     z-index: 150;
   }
   .reservation a {

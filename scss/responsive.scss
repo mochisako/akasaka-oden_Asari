@@ -115,10 +115,10 @@
       width: 100%;
       .swiper-wrapper {
         width: 100%;
-        height: 85vh;
+        height: 80vh;
         .swiper-slide > img {
           width: 100%;
-          height: 85%;
+          height: 100%;
           object-fit: cover;
           object-position: center center;
           position: relative;
@@ -127,23 +127,14 @@
     }
   }
   .three-picture {
-    margin-top: 9.275rem;
-    display: flex;
-    flex-direction: column-reverse;
+    display: block;
     width: 100%;
     .center {
-      position: absolute;
-      top: 24.5rem;
       background-color: rgba(147, 133, 55, 1);
       color: #fff;
       width: 100%;
-      padding-bottom: 5rem;
+      padding-bottom: 1rem;
       z-index: 10;
-      background: linear-gradient(
-        to bottom,
-        rgba(147, 133, 55, 1) 80%,
-        rgba(147, 133, 55, 0) 100%
-      );
       .title {
         padding-top: 40px;
         text-align: center;
@@ -160,16 +151,33 @@
         font-size: 1em;
       }
     }
-    .three-images > img {
-      width: 100%;
-      height: 50rem;
-    }
     .shops {
       display: none;
     }
     .staffs {
       background-color: rgba(147, 133, 55, 1);
+      display: inline-block;
       position: relative;
+      &::after {
+        position: absolute;
+        display: block;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          to top,
+          rgba(147, 133, 55, 0),
+          rgba(147, 133, 55, 0) 80%,
+          rgba(147, 133, 55, 1) 100%,
+          rgba(147, 133, 55, 1) 100%
+        );
+      }
+      & > img {
+        width: 100%;
+        height: 100%;
+      }
     }
   }
   .sub-menu_ul {
@@ -342,11 +350,11 @@
           width: 100%;
         }
         .counter-number {
-          padding: 2rem;
-          font-size: x-large;
+          padding: 1.5em;
+          font-size: 1.125rem;
         }
         .counter-comment {
-          font-size: 1rem;
+          font-size: 0.875rem;
           padding: 0 20px 60px 20px;
         }
       }
@@ -358,11 +366,11 @@
           width: 100%;
         }
         .table-number {
-          padding: 2rem;
-          font-size: x-large;
+          padding: 1.5em;
+          font-size: 1.125rem;
         }
         .table-comment {
-          font-size: 1rem;
+          font-size: 0.875rem;
           padding: 0 20px 60px 20px;
         }
       }
@@ -374,11 +382,11 @@
           width: 100%;
         }
         .little-number {
-          padding: 2rem;
-          font-size: x-large;
+          padding: 1.5em;
+          font-size: 1.125rem;
         }
         .little-comment {
-          font-size: 1rem;
+          font-size: 0.875rem;
           padding: 0 20px 60px 20px;
         }
       }
@@ -390,11 +398,11 @@
           width: 100%;
         }
         .private-number {
-          padding: 2rem;
-          font-size: x-large;
+          padding: 1.5em;
+          font-size: 1.125rem;
         }
         .private-comment {
-          font-size: 1rem;
+          font-size: 0.875rem;
           padding: 0 20px 60px 20px;
         }
       }
@@ -457,12 +465,12 @@
     display: block;
     text-align: center;
     position: fixed;
-    top: 400px;
-    right: 10px;
-    padding: 15px 10px;
+    bottom: 16px;
+    right: 16px;
+    padding: 20px 15px;
     background-color: #94392f;
     border: solid 3px #94392f;
-    border-radius: 60px;
+    border-radius: 70px;
     z-index: 150;
     a {
       text-decoration: none;

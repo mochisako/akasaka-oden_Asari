@@ -116,7 +116,7 @@
     text-align: center;
     margin: 4rem 0;
     font-weight: 200;
-    font-size: 2.1875rem;
+    font-size: 1.25rem;
     letter-spacing: 3px;
   }
   .info-access {
@@ -127,17 +127,20 @@
     border-spacing: 50px 30px;
   }
   .info-access .info-shopname {
-    margin: 0 44.5rem 1.25rem 0;
-    font-size: 1.5625rem;
+    margin-bottom: 1.25rem;
+    text-align: left;
+    font-size: 1.125rem;
     font-weight: 100;
     letter-spacing: 2px;
     color: rgb(63, 63, 63);
   }
   .info-access th {
+    font-size: 0.875rem;
     text-align: left;
     vertical-align: top;
   }
   .info-access td {
+    font-size: 0.875rem;
     padding-left: 20px;
   }
   .info-access td a {
@@ -146,11 +149,14 @@
     border-bottom: solid 1px rgb(63, 63, 63);
   }
   .info-map {
+    margin-top: 2rem;
     position: relative;
-    width: 100%;
+    left: 0.5rem;
+    right: 0.5rem;
+    bottom: 2rem;
+    width: 96.5%;
     height: 0;
     padding-top: 56.25%;
-    margin: 0 2rem 2rem 1rem;
   }
   .info-map iframe {
     position: absolute;

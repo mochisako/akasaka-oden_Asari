@@ -110,383 +110,367 @@
     }
   }
   .menu-top > img {
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-  }
-  .course-wrap {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 3rem 0 1.5rem 0;
-    h1.course {
-      color: rgb(63, 63, 63);
-      font-weight: 100;
-      font-size: 1.25rem;
-      text-align: center;
-      letter-spacing: 0.1875rem;
-    }
-    .course-icon > img {
-      width: 6.25rem;
-    }
-  }
-  .menu-course {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    .course-image > img {
-      margin: 0 2.2rem 0 2.2rem;
-      width: 90vw;
-    }
-    .course-introduction {
-      margin: 0 2.2rem 0 2.2rem;
-      color: rgb(109, 109, 109);
-      .course-title {
-        padding: 1.25rem 0;
-        letter-spacing: 0.1875rem;
+  }
+  .menu-wrapper {
+    margin: 3rem 1.25rem 0 1.25rem;
+    .course-wrap {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      h1.course {
+        color: rgb(63, 63, 63);
         font-weight: 100;
-        font-size: 1.2rem;
-        border-bottom: solid 2px rgb(109, 109, 109);
-      }
-      .course-price {
-        padding-top: 1.875rem;
         font-size: 1.25rem;
+        text-align: center;
         letter-spacing: 0.1875rem;
-        color: black;
       }
-      .course-description {
-        letter-spacing: 3px;
+      .course-icon > img {
+        width: 6.25rem;
       }
     }
-    .fadeIn_up {
-      opacity: 0;
-      transform: translate(0, 50%);
-      transition: 2s;
+    .menu-course {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      .course-image > img {
+        width: 100%;
+      }
+      .course-introduction {
+        color: rgb(109, 109, 109);
+        .course-title {
+          padding: 1.25rem 0;
+          letter-spacing: 0.1875rem;
+          font-weight: 100;
+          font-size: 1.2rem;
+          border-bottom: solid 2px rgb(109, 109, 109);
+        }
+        .course-price {
+          padding-top: 1.875rem;
+          font-size: 1.25rem;
+          letter-spacing: 0.1875rem;
+          color: black;
+        }
+        .course-description {
+          letter-spacing: 3px;
+        }
+      }
+      .fadeIn_up {
+        opacity: 0;
+        transform: translate(0, 50%);
+        transition: 2s;
+      }
+      .fadeIn_up.on {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
     }
-    .fadeIn_up.on {
-      transform: translate(0, 0);
-      opacity: 1;
-    }
-  }
-  .oden-wrap {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 3rem 0 1.5rem 0;
-    h1.oden {
-      color: rgb(63, 63, 63);
-      font-weight: 100;
-      font-size: 1.25rem;
-      text-align: center;
-      letter-spacing: 0.1875rem;
-    }
-    .oden-icon > img {
-      width: 3.75rem;
-    }
-  }
-  .menu-oden {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    .oden-image > img {
-      margin: 0 2.2rem 0 2.2rem;
-      width: 90vw;
-    }
-    .oden-introduction {
-      margin: 0 2.2rem 0 2.2rem;
-      color: rgb(109, 109, 109);
-      .oden-title {
-        padding: 1.25rem 0;
-        letter-spacing: 0.1875rem;
+    .oden-wrap {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: 3rem 0 1.5rem 0;
+      h1.oden {
+        color: rgb(63, 63, 63);
         font-weight: 100;
-        font-size: 1.2rem;
-        border-bottom: solid 2px rgb(109, 109, 109);
-      }
-      .oden-price {
-        font-size: 1rem;
-        font-weight: 100;
+        font-size: 1.25rem;
+        text-align: center;
         letter-spacing: 0.1875rem;
-        color: rgb(31, 31, 31);
       }
-      .oden-description {
-        letter-spacing: 2.5px;
-      }
-      .one {
-        padding: 1.25rem 0;
+      .oden-icon > img {
+        width: 3.75rem;
       }
     }
-    .fadeIn_up {
-      opacity: 0;
-      transform: translate(0, 50%);
-      transition: 2s;
+    .menu-oden {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      .oden-image > img {
+        width: 100%;
+      }
+      .oden-introduction {
+        color: rgb(109, 109, 109);
+        .oden-title {
+          padding: 1.25rem 0;
+          letter-spacing: 0.1875rem;
+          font-weight: 100;
+          font-size: 1.2rem;
+          border-bottom: solid 2px rgb(109, 109, 109);
+        }
+        .oden-price {
+          font-size: 1rem;
+          font-weight: 100;
+          letter-spacing: 0.1875rem;
+          color: rgb(31, 31, 31);
+        }
+        .oden-description {
+          letter-spacing: 2.5px;
+        }
+        .one {
+          padding: 1.25rem 0;
+        }
+      }
+      .fadeIn_up {
+        opacity: 0;
+        transform: translate(0, 50%);
+        transition: 2s;
+      }
+      .fadeIn_up.on {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
     }
-    .fadeIn_up.on {
-      transform: translate(0, 0);
-      opacity: 1;
-    }
-  }
-  .menu-obanzai {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: stretch;
-    .obanzai-image {
-      margin: 0 2.2rem 0 2.2rem;
-      .swiper-wrapper {
-        width: 90vw;
-        .swiper-slide > img {
+    .menu-obanzai {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: stretch;
+      .obanzai-image {
+        .swiper-wrapper {
           width: 100%;
+          .swiper-slide > img {
+            width: 100%;
+          }
         }
       }
-    }
-    .obanzai-introduction {
-      margin: 0 2.2rem 0 2.2rem;
-      color: rgb(109, 109, 109);
-      .obanzai-title {
-        padding: 1.25rem 0;
-        letter-spacing: 0.1875rem;
-        font-weight: light;
-        font-size: 1.2rem;
-        border-bottom: solid 2px rgb(109, 109, 109);
+      .obanzai-introduction {
+        color: rgb(109, 109, 109);
+        .obanzai-title {
+          padding: 1.25rem 0;
+          letter-spacing: 0.1875rem;
+          font-weight: light;
+          font-size: 1.2rem;
+          border-bottom: solid 2px rgb(109, 109, 109);
+        }
+        .obanzai-description {
+          padding: 1.875rem 0 1.875rem 0;
+          font-size: 1rem;
+          font-weight: lighter;
+          letter-spacing: 0.1875rem;
+          strong {
+            font-weight: 100;
+            color: rgb(69, 69, 69);
+          }
+        }
       }
-      .obanzai-description {
-        padding: 1.875rem 0 1.875rem 0;
-        font-size: 1rem;
-        font-weight: lighter;
-        letter-spacing: 0.1875rem;
-        strong {
+      .fadeIn_up {
+        opacity: 0;
+        transform: translate(0, 50%);
+        transition: 2s;
+      }
+      .fadeIn_up.on {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
+    }
+    .menu-cold {
+      margin: 0;
+      .cold-image > img {
+        width: 100%;
+      }
+      .cold-introduction {
+        color: rgb(109, 109, 109);
+        .cold-title {
+          padding: 1.25rem 0;
+          letter-spacing: 0.1875rem;
           font-weight: 100;
-          color: rgb(69, 69, 69);
+          font-size: 1.2rem;
+          border-bottom: solid 2px rgb(109, 109, 109);
+        }
+        .cold-description {
+          padding: 1.875rem 0 1.875rem 0;
+          font-size: 1rem;
+          font-weight: lighter;
+          letter-spacing: 0.1875rem;
+          strong {
+            font-weight: 100;
+            color: rgb(69, 69, 69);
+          }
         }
       }
+      .fadeIn_up {
+        opacity: 0;
+        transform: translate(0, 50%);
+        transition: 2s;
+      }
+      .fadeIn_up.on {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
     }
-    .fadeIn_up {
-      opacity: 0;
-      transform: translate(0, 50%);
-      transition: 2s;
+    .menu-fried {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: stretch;
+      .fried-image > img {
+        width: 100%;
+      }
+      .fried-introduction {
+        color: rgb(109, 109, 109);
+        .fried-title {
+          padding: 1.25rem 0;
+          letter-spacing: 2px;
+          font-weight: 100;
+          font-size: 1.2rem;
+          border-bottom: solid 2px rgb(109, 109, 109);
+        }
+        .fried-description {
+          padding: 1.875rem 0 1.875rem 0;
+          font-size: 1rem;
+          font-weight: lighter;
+          letter-spacing: 0.1875rem;
+          strong {
+            font-weight: 100;
+            color: rgb(69, 69, 69);
+          }
+        }
+      }
+      .fadeIn_up {
+        opacity: 0;
+        transform: translate(0, 50%);
+        transition: 2s;
+      }
+      .fadeIn_up.on {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
     }
-    .fadeIn_up.on {
-      transform: translate(0, 0);
-      opacity: 1;
+    .menu-grilled {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      .grilled-image > img {
+        width: 100%;
+      }
+      .grilled-introduction {
+        color: rgb(109, 109, 109);
+        .grilled-title {
+          padding: 1.25rem 0;
+          letter-spacing: 2px;
+          font-weight: 100;
+          font-size: 1.2rem;
+          border-bottom: solid 2px rgb(109, 109, 109);
+        }
+        .grilled-description {
+          padding: 1.875rem 0 1.875rem 0;
+          font-size: 1rem;
+          font-weight: lighter;
+          letter-spacing: 0.1875rem;
+          strong {
+            font-weight: 100;
+            color: rgb(69, 69, 69);
+          }
+        }
+      }
+      .fadeIn_up {
+        opacity: 0;
+        transform: translate(0, 50%);
+        transition: 2s;
+      }
+      .fadeIn_up.on {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
     }
-  }
-  .menu-cold {
-    //   display: flex;
-    //   justify-content: center;
-    .cold-image > img {
-      margin: 0 2.2rem 0 2.2rem;
-      width: 90vw;
+    .menu-closing {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: stretch;
+      .closing-image > img {
+        width: 100%;
+      }
+      .closing-introduction {
+        color: rgb(109, 109, 109);
+        .closing-title {
+          padding: 1.25rem 0;
+          letter-spacing: 2px;
+          font-weight: 100;
+          font-size: 1.5rem;
+          border-bottom: solid 2px rgb(109, 109, 109);
+        }
+        .closing-description {
+          padding: 1.875rem 0 1.875rem 0;
+          font-size: 1rem;
+          font-weight: lighter;
+          letter-spacing: 0.1875rem;
+          strong {
+            font-weight: 100;
+            color: rgb(69, 69, 69);
+          }
+        }
+      }
+      .fadeIn_up {
+        opacity: 0;
+        transform: translate(0, 50%);
+        transition: 2s;
+      }
+      .fadeIn_up.on {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
     }
-    .cold-introduction {
-      margin: 0 2.2rem 0 2.2rem;
-      color: rgb(109, 109, 109);
-      .cold-title {
-        padding: 1.25rem 0;
-        letter-spacing: 0.1875rem;
+    .sake-wrap {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 1rem;
+      h1.sake {
+        color: rgb(63, 63, 63);
         font-weight: 100;
-        font-size: 1.2rem;
-        border-bottom: solid 2px rgb(109, 109, 109);
-      }
-      .cold-description {
-        padding: 1.875rem 0 1.875rem 0;
-        font-size: 1rem;
-        font-weight: lighter;
-        letter-spacing: 0.1875rem;
-        strong {
-          font-weight: 100;
-          color: rgb(69, 69, 69);
-        }
-      }
-    }
-    .fadeIn_up {
-      opacity: 0;
-      transform: translate(0, 50%);
-      transition: 2s;
-    }
-    .fadeIn_up.on {
-      transform: translate(0, 0);
-      opacity: 1;
-    }
-  }
-  .menu-fried {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: stretch;
-    .fried-image > img {
-      margin: 0 2.2rem 0 2.2rem;
-      width: 90vw;
-    }
-    .fried-introduction {
-      margin: 0 2.2rem 0 2.2rem;
-      color: rgb(109, 109, 109);
-      .fried-title {
-        padding: 1.25rem 0;
+        font-size: 1.25rem;
         letter-spacing: 2px;
-        font-weight: 100;
-        font-size: 1.2rem;
-        border-bottom: solid 2px rgb(109, 109, 109);
       }
-      .fried-description {
-        padding: 1.875rem 0 1.875rem 0;
-        font-size: 1rem;
-        font-weight: lighter;
-        letter-spacing: 0.1875rem;
-        strong {
+      .sake-icon > img {
+        width: 3.75rem;
+      }
+    }
+    .menu-sake {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      .sake-image > img {
+        margin-bottom: 4.999375rem;
+        width: 100%;
+      }
+      .sake-introduction {
+        margin-bottom: 1.5rem;
+        color: rgb(109, 109, 109);
+        letter-spacing: 0.18rem;
+        .sake-title {
+          padding-top: 1.5rem;
           font-weight: 100;
-          color: rgb(69, 69, 69);
+          font-size: 1.5rem;
+        }
+        .sake-kinds {
+          padding-top: 1.5rem;
+        }
+        .sake-price {
+          font-size: 16px;
+          font-weight: 100;
+        }
+        .sake-description {
+          line-height: 1.5rem;
+          strong {
+            font-weight: 100;
+            color: rgb(69, 69, 69);
+          }
         }
       }
-    }
-    .fadeIn_up {
-      opacity: 0;
-      transform: translate(0, 50%);
-      transition: 2s;
-    }
-    .fadeIn_up.on {
-      transform: translate(0, 0);
-      opacity: 1;
-    }
-  }
-  .menu-grilled {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    .grilled-image > img {
-      margin: 0 2.2rem 0 2.2rem;
-      width: 90vw;
-    }
-    .grilled-introduction {
-      margin: 0 2.2rem 0 2.2rem;
-      color: rgb(109, 109, 109);
-      .grilled-title {
-        padding: 1.25rem 0;
-        letter-spacing: 2px;
-        font-weight: 100;
-        font-size: 1.2rem;
-        border-bottom: solid 2px rgb(109, 109, 109);
+      .fadeIn_up {
+        opacity: 0;
+        transform: translate(0, 50%);
+        transition: 2s;
       }
-      .grilled-description {
-        padding: 1.875rem 0 1.875rem 0;
-        font-size: 1rem;
-        font-weight: lighter;
-        letter-spacing: 0.1875rem;
-        strong {
-          font-weight: 100;
-          color: rgb(69, 69, 69);
-        }
+      .fadeIn_up.on {
+        transform: translate(0, 0);
+        opacity: 1;
       }
-    }
-    .fadeIn_up {
-      opacity: 0;
-      transform: translate(0, 50%);
-      transition: 2s;
-    }
-    .fadeIn_up.on {
-      transform: translate(0, 0);
-      opacity: 1;
-    }
-  }
-  .menu-closing {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: stretch;
-    .closing-image > img {
-      margin: 0 2.2rem 0 2.2rem;
-      width: 90vw;
-    }
-    .closing-introduction {
-      margin: 0 2.2rem 0 2.2rem;
-      color: rgb(109, 109, 109);
-      .closing-title {
-        padding: 1.25rem 0;
-        letter-spacing: 2px;
-        font-weight: 100;
-        font-size: 1.5rem;
-        border-bottom: solid 2px rgb(109, 109, 109);
-      }
-      .closing-description {
-        padding: 1.875rem 0 1.875rem 0;
-        font-size: 1rem;
-        font-weight: lighter;
-        letter-spacing: 0.1875rem;
-        strong {
-          font-weight: 100;
-          color: rgb(69, 69, 69);
-        }
-      }
-    }
-    .fadeIn_up {
-      opacity: 0;
-      transform: translate(0, 50%);
-      transition: 2s;
-    }
-    .fadeIn_up.on {
-      transform: translate(0, 0);
-      opacity: 1;
-    }
-  }
-  .sake-wrap {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 1rem;
-    h1.sake {
-      color: rgb(63, 63, 63);
-      font-weight: 100;
-      font-size: 1.25rem;
-      letter-spacing: 2px;
-    }
-    .sake-icon > img {
-      width: 3.75rem;
-    }
-  }
-  .menu-sake {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    .sake-image > img {
-      margin: 0 2.2rem 4.999375rem 2.2rem;
-      width: 90vw;
-    }
-    .sake-introduction {
-      margin: 0 2.2rem 1.5rem 2.2rem;
-      color: rgb(109, 109, 109);
-      letter-spacing: 0.18rem;
-      .sake-title {
-        padding-top: 1.5rem;
-        font-weight: 100;
-        font-size: 1.5rem;
-      }
-      .sake-kinds {
-        padding-top: 1.5rem;
-      }
-      .sake-price {
-        font-size: 16px;
-        font-weight: 100;
-      }
-      .sake-description {
-        //       width: 29rem;
-        //       padding-bottom: 25px;
-        line-height: 1.5rem;
-        strong {
-          font-weight: 100;
-          color: rgb(69, 69, 69);
-        }
-      }
-    }
-    .fadeIn_up {
-      opacity: 0;
-      transform: translate(0, 50%);
-      transition: 2s;
-    }
-    .fadeIn_up.on {
-      transform: translate(0, 0);
-      opacity: 1;
     }
   }
 }

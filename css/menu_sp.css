@@ -104,376 +104,364 @@
     color: #fff;
   }
   .menu-top > img {
-    margin: 0;
-    padding: 0;
-    width: 100vw;
+    width: 100%;
   }
-  .course-wrap {
+  .menu-wrapper {
+    margin: 3rem 1.25rem 0 1.25rem;
+  }
+  .menu-wrapper .course-wrap {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 3rem 0 1.5rem 0;
+    margin-bottom: 1.5rem;
   }
-  .course-wrap h1.course {
+  .menu-wrapper .course-wrap h1.course {
     color: rgb(63, 63, 63);
     font-weight: 100;
     font-size: 1.25rem;
     text-align: center;
     letter-spacing: 0.1875rem;
   }
-  .course-wrap .course-icon > img {
+  .menu-wrapper .course-wrap .course-icon > img {
     width: 6.25rem;
   }
-  .menu-course {
+  .menu-wrapper .menu-course {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: stretch;
   }
-  .menu-course .course-image > img {
-    margin: 0 2.2rem 0 2.2rem;
-    width: 90vw;
+  .menu-wrapper .menu-course .course-image > img {
+    width: 100%;
   }
-  .menu-course .course-introduction {
-    margin: 0 2.2rem 0 2.2rem;
+  .menu-wrapper .menu-course .course-introduction {
     color: rgb(109, 109, 109);
   }
-  .menu-course .course-introduction .course-title {
+  .menu-wrapper .menu-course .course-introduction .course-title {
     padding: 1.25rem 0;
     letter-spacing: 0.1875rem;
     font-weight: 100;
     font-size: 1.2rem;
     border-bottom: solid 2px rgb(109, 109, 109);
   }
-  .menu-course .course-introduction .course-price {
+  .menu-wrapper .menu-course .course-introduction .course-price {
     padding-top: 1.875rem;
     font-size: 1.25rem;
     letter-spacing: 0.1875rem;
     color: black;
   }
-  .menu-course .course-introduction .course-description {
+  .menu-wrapper .menu-course .course-introduction .course-description {
     letter-spacing: 3px;
   }
-  .menu-course .fadeIn_up {
+  .menu-wrapper .menu-course .fadeIn_up {
     opacity: 0;
     transform: translate(0, 50%);
     transition: 2s;
   }
-  .menu-course .fadeIn_up.on {
+  .menu-wrapper .menu-course .fadeIn_up.on {
     transform: translate(0, 0);
     opacity: 1;
   }
-  .oden-wrap {
+  .menu-wrapper .oden-wrap {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: 3rem 0 1.5rem 0;
   }
-  .oden-wrap h1.oden {
+  .menu-wrapper .oden-wrap h1.oden {
     color: rgb(63, 63, 63);
     font-weight: 100;
     font-size: 1.25rem;
     text-align: center;
     letter-spacing: 0.1875rem;
   }
-  .oden-wrap .oden-icon > img {
+  .menu-wrapper .oden-wrap .oden-icon > img {
     width: 3.75rem;
   }
-  .menu-oden {
+  .menu-wrapper .menu-oden {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: stretch;
   }
-  .menu-oden .oden-image > img {
-    margin: 0 2.2rem 0 2.2rem;
-    width: 90vw;
+  .menu-wrapper .menu-oden .oden-image > img {
+    width: 100%;
   }
-  .menu-oden .oden-introduction {
-    margin: 0 2.2rem 0 2.2rem;
+  .menu-wrapper .menu-oden .oden-introduction {
     color: rgb(109, 109, 109);
   }
-  .menu-oden .oden-introduction .oden-title {
+  .menu-wrapper .menu-oden .oden-introduction .oden-title {
     padding: 1.25rem 0;
     letter-spacing: 0.1875rem;
     font-weight: 100;
     font-size: 1.2rem;
     border-bottom: solid 2px rgb(109, 109, 109);
   }
-  .menu-oden .oden-introduction .oden-price {
+  .menu-wrapper .menu-oden .oden-introduction .oden-price {
     font-size: 1rem;
     font-weight: 100;
     letter-spacing: 0.1875rem;
     color: rgb(31, 31, 31);
   }
-  .menu-oden .oden-introduction .oden-description {
+  .menu-wrapper .menu-oden .oden-introduction .oden-description {
     letter-spacing: 2.5px;
   }
-  .menu-oden .oden-introduction .one {
+  .menu-wrapper .menu-oden .oden-introduction .one {
     padding: 1.25rem 0;
   }
-  .menu-oden .fadeIn_up {
+  .menu-wrapper .menu-oden .fadeIn_up {
     opacity: 0;
     transform: translate(0, 50%);
     transition: 2s;
   }
-  .menu-oden .fadeIn_up.on {
+  .menu-wrapper .menu-oden .fadeIn_up.on {
     transform: translate(0, 0);
     opacity: 1;
   }
-  .menu-obanzai {
+  .menu-wrapper .menu-obanzai {
     margin-top: 2rem;
     display: flex;
     flex-direction: column-reverse;
     align-items: stretch;
   }
-  .menu-obanzai .obanzai-image {
-    margin: 0 2.2rem 0 2.2rem;
-  }
-  .menu-obanzai .obanzai-image .swiper-wrapper {
-    width: 90vw;
-  }
-  .menu-obanzai .obanzai-image .swiper-wrapper .swiper-slide > img {
+  .menu-wrapper .menu-obanzai .obanzai-image .swiper-wrapper {
     width: 100%;
   }
-  .menu-obanzai .obanzai-introduction {
-    margin: 0 2.2rem 0 2.2rem;
+  .menu-wrapper .menu-obanzai .obanzai-image .swiper-wrapper .swiper-slide > img {
+    width: 100%;
+  }
+  .menu-wrapper .menu-obanzai .obanzai-introduction {
     color: rgb(109, 109, 109);
   }
-  .menu-obanzai .obanzai-introduction .obanzai-title {
+  .menu-wrapper .menu-obanzai .obanzai-introduction .obanzai-title {
     padding: 1.25rem 0;
     letter-spacing: 0.1875rem;
     font-weight: light;
     font-size: 1.2rem;
     border-bottom: solid 2px rgb(109, 109, 109);
   }
-  .menu-obanzai .obanzai-introduction .obanzai-description {
+  .menu-wrapper .menu-obanzai .obanzai-introduction .obanzai-description {
     padding: 1.875rem 0 1.875rem 0;
     font-size: 1rem;
     font-weight: lighter;
     letter-spacing: 0.1875rem;
   }
-  .menu-obanzai .obanzai-introduction .obanzai-description strong {
+  .menu-wrapper .menu-obanzai .obanzai-introduction .obanzai-description strong {
     font-weight: 100;
     color: rgb(69, 69, 69);
   }
-  .menu-obanzai .fadeIn_up {
+  .menu-wrapper .menu-obanzai .fadeIn_up {
     opacity: 0;
     transform: translate(0, 50%);
     transition: 2s;
   }
-  .menu-obanzai .fadeIn_up.on {
+  .menu-wrapper .menu-obanzai .fadeIn_up.on {
     transform: translate(0, 0);
     opacity: 1;
   }
-  .menu-cold .cold-image > img {
-    margin: 0 2.2rem 0 2.2rem;
-    width: 90vw;
+  .menu-wrapper .menu-cold {
+    margin: 0;
   }
-  .menu-cold .cold-introduction {
-    margin: 0 2.2rem 0 2.2rem;
+  .menu-wrapper .menu-cold .cold-image > img {
+    width: 100%;
+  }
+  .menu-wrapper .menu-cold .cold-introduction {
     color: rgb(109, 109, 109);
   }
-  .menu-cold .cold-introduction .cold-title {
+  .menu-wrapper .menu-cold .cold-introduction .cold-title {
     padding: 1.25rem 0;
     letter-spacing: 0.1875rem;
     font-weight: 100;
     font-size: 1.2rem;
     border-bottom: solid 2px rgb(109, 109, 109);
   }
-  .menu-cold .cold-introduction .cold-description {
+  .menu-wrapper .menu-cold .cold-introduction .cold-description {
     padding: 1.875rem 0 1.875rem 0;
     font-size: 1rem;
     font-weight: lighter;
     letter-spacing: 0.1875rem;
   }
-  .menu-cold .cold-introduction .cold-description strong {
+  .menu-wrapper .menu-cold .cold-introduction .cold-description strong {
     font-weight: 100;
     color: rgb(69, 69, 69);
   }
-  .menu-cold .fadeIn_up {
+  .menu-wrapper .menu-cold .fadeIn_up {
     opacity: 0;
     transform: translate(0, 50%);
     transition: 2s;
   }
-  .menu-cold .fadeIn_up.on {
+  .menu-wrapper .menu-cold .fadeIn_up.on {
     transform: translate(0, 0);
     opacity: 1;
   }
-  .menu-fried {
+  .menu-wrapper .menu-fried {
     display: flex;
     flex-direction: column-reverse;
     align-items: stretch;
   }
-  .menu-fried .fried-image > img {
-    margin: 0 2.2rem 0 2.2rem;
-    width: 90vw;
+  .menu-wrapper .menu-fried .fried-image > img {
+    width: 100%;
   }
-  .menu-fried .fried-introduction {
-    margin: 0 2.2rem 0 2.2rem;
+  .menu-wrapper .menu-fried .fried-introduction {
     color: rgb(109, 109, 109);
   }
-  .menu-fried .fried-introduction .fried-title {
+  .menu-wrapper .menu-fried .fried-introduction .fried-title {
     padding: 1.25rem 0;
     letter-spacing: 2px;
     font-weight: 100;
     font-size: 1.2rem;
     border-bottom: solid 2px rgb(109, 109, 109);
   }
-  .menu-fried .fried-introduction .fried-description {
+  .menu-wrapper .menu-fried .fried-introduction .fried-description {
     padding: 1.875rem 0 1.875rem 0;
     font-size: 1rem;
     font-weight: lighter;
     letter-spacing: 0.1875rem;
   }
-  .menu-fried .fried-introduction .fried-description strong {
+  .menu-wrapper .menu-fried .fried-introduction .fried-description strong {
     font-weight: 100;
     color: rgb(69, 69, 69);
   }
-  .menu-fried .fadeIn_up {
+  .menu-wrapper .menu-fried .fadeIn_up {
     opacity: 0;
     transform: translate(0, 50%);
     transition: 2s;
   }
-  .menu-fried .fadeIn_up.on {
+  .menu-wrapper .menu-fried .fadeIn_up.on {
     transform: translate(0, 0);
     opacity: 1;
   }
-  .menu-grilled {
+  .menu-wrapper .menu-grilled {
     display: flex;
     flex-direction: column;
     align-items: stretch;
   }
-  .menu-grilled .grilled-image > img {
-    margin: 0 2.2rem 0 2.2rem;
-    width: 90vw;
+  .menu-wrapper .menu-grilled .grilled-image > img {
+    width: 100%;
   }
-  .menu-grilled .grilled-introduction {
-    margin: 0 2.2rem 0 2.2rem;
+  .menu-wrapper .menu-grilled .grilled-introduction {
     color: rgb(109, 109, 109);
   }
-  .menu-grilled .grilled-introduction .grilled-title {
+  .menu-wrapper .menu-grilled .grilled-introduction .grilled-title {
     padding: 1.25rem 0;
     letter-spacing: 2px;
     font-weight: 100;
     font-size: 1.2rem;
     border-bottom: solid 2px rgb(109, 109, 109);
   }
-  .menu-grilled .grilled-introduction .grilled-description {
+  .menu-wrapper .menu-grilled .grilled-introduction .grilled-description {
     padding: 1.875rem 0 1.875rem 0;
     font-size: 1rem;
     font-weight: lighter;
     letter-spacing: 0.1875rem;
   }
-  .menu-grilled .grilled-introduction .grilled-description strong {
+  .menu-wrapper .menu-grilled .grilled-introduction .grilled-description strong {
     font-weight: 100;
     color: rgb(69, 69, 69);
   }
-  .menu-grilled .fadeIn_up {
+  .menu-wrapper .menu-grilled .fadeIn_up {
     opacity: 0;
     transform: translate(0, 50%);
     transition: 2s;
   }
-  .menu-grilled .fadeIn_up.on {
+  .menu-wrapper .menu-grilled .fadeIn_up.on {
     transform: translate(0, 0);
     opacity: 1;
   }
-  .menu-closing {
+  .menu-wrapper .menu-closing {
     display: flex;
     flex-direction: column-reverse;
     align-items: stretch;
   }
-  .menu-closing .closing-image > img {
-    margin: 0 2.2rem 0 2.2rem;
-    width: 90vw;
+  .menu-wrapper .menu-closing .closing-image > img {
+    width: 100%;
   }
-  .menu-closing .closing-introduction {
-    margin: 0 2.2rem 0 2.2rem;
+  .menu-wrapper .menu-closing .closing-introduction {
     color: rgb(109, 109, 109);
   }
-  .menu-closing .closing-introduction .closing-title {
+  .menu-wrapper .menu-closing .closing-introduction .closing-title {
     padding: 1.25rem 0;
     letter-spacing: 2px;
     font-weight: 100;
     font-size: 1.5rem;
     border-bottom: solid 2px rgb(109, 109, 109);
   }
-  .menu-closing .closing-introduction .closing-description {
+  .menu-wrapper .menu-closing .closing-introduction .closing-description {
     padding: 1.875rem 0 1.875rem 0;
     font-size: 1rem;
     font-weight: lighter;
     letter-spacing: 0.1875rem;
   }
-  .menu-closing .closing-introduction .closing-description strong {
+  .menu-wrapper .menu-closing .closing-introduction .closing-description strong {
     font-weight: 100;
     color: rgb(69, 69, 69);
   }
-  .menu-closing .fadeIn_up {
+  .menu-wrapper .menu-closing .fadeIn_up {
     opacity: 0;
     transform: translate(0, 50%);
     transition: 2s;
   }
-  .menu-closing .fadeIn_up.on {
+  .menu-wrapper .menu-closing .fadeIn_up.on {
     transform: translate(0, 0);
     opacity: 1;
   }
-  .sake-wrap {
+  .menu-wrapper .sake-wrap {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding-bottom: 1rem;
   }
-  .sake-wrap h1.sake {
+  .menu-wrapper .sake-wrap h1.sake {
     color: rgb(63, 63, 63);
     font-weight: 100;
     font-size: 1.25rem;
     letter-spacing: 2px;
   }
-  .sake-wrap .sake-icon > img {
+  .menu-wrapper .sake-wrap .sake-icon > img {
     width: 3.75rem;
   }
-  .menu-sake {
+  .menu-wrapper .menu-sake {
     display: flex;
     flex-direction: column;
     align-items: stretch;
   }
-  .menu-sake .sake-image > img {
-    margin: 0 2.2rem 4.999375rem 2.2rem;
-    width: 90vw;
+  .menu-wrapper .menu-sake .sake-image > img {
+    margin-bottom: 4.999375rem;
+    width: 100%;
   }
-  .menu-sake .sake-introduction {
-    margin: 0 2.2rem 1.5rem 2.2rem;
+  .menu-wrapper .menu-sake .sake-introduction {
+    margin-bottom: 1.5rem;
     color: rgb(109, 109, 109);
     letter-spacing: 0.18rem;
   }
-  .menu-sake .sake-introduction .sake-title {
+  .menu-wrapper .menu-sake .sake-introduction .sake-title {
     padding-top: 1.5rem;
     font-weight: 100;
     font-size: 1.5rem;
   }
-  .menu-sake .sake-introduction .sake-kinds {
+  .menu-wrapper .menu-sake .sake-introduction .sake-kinds {
     padding-top: 1.5rem;
   }
-  .menu-sake .sake-introduction .sake-price {
+  .menu-wrapper .menu-sake .sake-introduction .sake-price {
     font-size: 16px;
     font-weight: 100;
   }
-  .menu-sake .sake-introduction .sake-description {
+  .menu-wrapper .menu-sake .sake-introduction .sake-description {
     line-height: 1.5rem;
   }
-  .menu-sake .sake-introduction .sake-description strong {
+  .menu-wrapper .menu-sake .sake-introduction .sake-description strong {
     font-weight: 100;
     color: rgb(69, 69, 69);
   }
-  .menu-sake .fadeIn_up {
+  .menu-wrapper .menu-sake .fadeIn_up {
     opacity: 0;
     transform: translate(0, 50%);
     transition: 2s;
   }
-  .menu-sake .fadeIn_up.on {
+  .menu-wrapper .menu-sake .fadeIn_up.on {
     transform: translate(0, 0);
     opacity: 1;
   }
