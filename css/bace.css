@@ -102,15 +102,15 @@ html body {
     height: 40%;
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    padding: 1.5rem;
   }
   html body .footer-logo {
+    margin-bottom: 1.5rem;
     text-align: center;
   }
   html body .footer-logo > img {
     width: 70%;
-    padding-left: auto;
-    padding-right: auto;
+    padding: 0 auto;
   }
   html body .footer .footer-info {
     color: #fff;
@@ -119,6 +119,7 @@ html body {
     line-height: 2rem;
   }
   html body .footer .footer-info .footer-shopname {
+    text-wrap: nowrap;
     font-size: 1.25rem;
     font-weight: 300;
     letter-spacing: 3px;
@@ -136,6 +137,7 @@ html body {
     color: #fff;
   }
   html body .footer .footer-info .footer-tel {
+    text-wrap: nowrap;
     letter-spacing: 3px;
     font-size: 1.05em;
     font-weight: 700;
@@ -157,6 +159,7 @@ html body {
     font-weight: 100;
   }
   html body .footer .footer-info .footer-sister {
+    text-wrap: nowrap;
     letter-spacing: 3px;
     font-size: 1.05em;
     font-weight: 700;

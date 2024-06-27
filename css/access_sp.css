@@ -108,9 +108,10 @@
     height: auto;
   }
   .info {
+    margin: 0 1.25rem;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
   }
   .info-title {
     text-align: center;
@@ -122,9 +123,9 @@
   .info-access {
     margin-bottom: 10px;
     font-size: 1.125rem;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     border-collapse: separate;
-    border-spacing: 50px 30px;
+    border-spacing: 0.5em 2em;
   }
   .info-access .info-shopname {
     margin-bottom: 1.25rem;
@@ -135,6 +136,7 @@
     color: rgb(63, 63, 63);
   }
   .info-access th {
+    width: 26%;
     font-size: 0.875rem;
     text-align: left;
     vertical-align: top;

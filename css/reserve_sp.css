@@ -125,28 +125,54 @@
     border-collapse: separate;
     border-spacing: 0 3.125em;
   }
+  .reserve-tools .tel {
+    vertical-align: baseline;
+  }
   .reserve-tools .tel th {
     width: 26%;
     text-align: left;
-    vertical-align: baseline;
+    letter-spacing: 3px;
   }
+}
+@media screen and (max-width: 1049px) and (min-width: 900px) {
+  .reserve-tools .tel th {
+    width: 200px;
+    text-align: left;
+    letter-spacing: 3px;
+  }
+}
+@media screen and (max-width: 1049px) {
   .reserve-tools .tel td a {
     text-wrap: nowrap;
-    margin-left: 85%;
-    letter-spacing: 2px;
+    margin-left: 1em;
+    letter-spacing: 3px;
     color: rgb(44, 44, 44);
     font-weight: 500;
     text-decoration: none;
   }
+  .reserve-tools .line {
+    vertical-align: baseline;
+  }
   .reserve-tools .line th {
     width: 26%;
     text-align: left;
-    vertical-align: baseline;
+    letter-spacing: 3px;
+    letter-spacing: 3px;
   }
+}
+@media screen and (max-width: 1049px) and (min-width: 900px) {
+  .reserve-tools .line th {
+    width: 200px;
+    text-align: left;
+    letter-spacing: 3px;
+  }
+}
+@media screen and (max-width: 1049px) {
   .reserve-tools .line td a {
-    margin-left: 85%;
+    text-wrap: nowrap;
+    margin-left: 1em;
     padding: 1.03125rem 2.1875rem;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     font-weight: 500;
     text-decoration: none;
     background-color: rgb(0, 195, 0);

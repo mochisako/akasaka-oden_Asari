@@ -58,6 +58,7 @@
   .info-access th {
     text-align: left;
     vertical-align: top;
+    text-wrap: nowrap;
   }
   .info-access td {
     padding-left: 20px;
@@ -69,7 +70,7 @@
   }
   .info .info-map {
     text-align: center;
-    width: 100vw;
+    width: 100%;
     margin-bottom: 2rem;
   }
   .info .info-map .info-map iframe {

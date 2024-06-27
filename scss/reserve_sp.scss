@@ -130,16 +130,22 @@
       border-collapse: separate;
       border-spacing: 0 3.125em;
       .tel {
+        vertical-align: baseline;
         th {
           width: 26%;
           text-align: left;
-          vertical-align: baseline;
+          letter-spacing: 3px;
+          @media screen and (min-width: 900px) {
+            width: 200px;
+            text-align: left;
+            letter-spacing: 3px;
+          }
         }
         td {
           a {
             text-wrap: nowrap;
-            margin-left: 85%;
-            letter-spacing: 2px;
+            margin-left: 1em;
+            letter-spacing: 3px;
             color: rgb(44, 44, 44);
             font-weight: 500;
             text-decoration: none;
@@ -147,15 +153,23 @@
         }
       }
       .line {
+        vertical-align: baseline;
         th {
           width: 26%;
           text-align: left;
-          vertical-align: baseline;
+          letter-spacing: 3px;
+          letter-spacing: 3px;
+          @media screen and (min-width: 900px) {
+            width: 200px;
+            text-align: left;
+            letter-spacing: 3px;
+          }
         }
         td a {
-          margin-left: 85%;
+          text-wrap: nowrap;
+          margin-left: 1em;
           padding: 1.03125rem 2.1875rem;
-          letter-spacing: 2px;
+          letter-spacing: 3px;
           font-weight: 500;
           text-decoration: none;
           background-color: rgba(0, 195, 0, 1);
